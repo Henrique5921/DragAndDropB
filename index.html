@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizador de Estudos - Enem & Provas Finais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>📚 Foco no Enem & Provas Finais</h1>
+        <p>Organize suas tarefas para evitar a procrastinação!</p>
+    </header>
+
+    <main class="kanban-board">
+        <!-- Coluna A Fazer -->
+        <section class="kanban-column">
+            <h2 class="column-header todo-header">A Fazer 📝</h2>
+            <div class="column-content" data-column="todo">
+                <div class="kanban-card" draggable="true">Redação: Treinar tema surpresa</div>
+                <div class="kanban-card" draggable="true">Simulado de Matemática</div>
+                <div class="kanban-card" draggable="true">Revisão de Biologia: Ecologia</div>
+            </div>
+        </section>
+
+        <!-- Coluna Em Andamento -->
+        <section class="kanban-column">
+            <h2 class="column-header inprogress-header">Em Andamento ⏳</h2>
+            <div class="column-content" data-column="inprogress">
+                <div class="kanban-card" draggable="true">Resumo de História do Brasil</div>
+            </div>
+        </section>
+
+        <!-- Coluna Concluído -->
+        <section class="kanban-column">
+            <h2 class="column-header done-header">Concluído ✅</h2>
+            <div class="column-content" data-column="done">
+                <div class="kanban-card" draggable="true">Exercícios de Física: Mecânica</div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
